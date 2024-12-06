@@ -21,8 +21,8 @@ const TodoComponent: React.FC<props> = ({ isChecked, onPress, title, editMode, i
   const dispatch = useAppDispatch()
   const colorScheme = useColorScheme()
   const Colors = useColor()
-  const editAnim = useRef(new Animated.Value(-30)).current;
-  const deleteAnim = useRef(new Animated.Value(-32)).current;
+  const editAnim = useRef(new Animated.Value(-40)).current;
+  const deleteAnim = useRef(new Animated.Value(-35)).current;
 
 
   const backgroundColor = useMemo(() => {
@@ -36,13 +36,13 @@ const TodoComponent: React.FC<props> = ({ isChecked, onPress, title, editMode, i
   const animationEditMode = (visible: boolean) => {
     return Animated.parallel([
       Animated.spring(deleteAnim, {
-        toValue: visible ? 7 : -30,
+        toValue: visible ? 7 : -40,
         friction: 3,
         tension: visible ? 30 : 0,
         useNativeDriver: false,
       }),
       Animated.spring(editAnim, {
-        toValue: visible ? 0 : -32,
+        toValue: visible ? 0 : -35,
         tension: visible ? 30 : 0,
         friction: 3,
         useNativeDriver: false,
