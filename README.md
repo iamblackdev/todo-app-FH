@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Todo App 👋
 
 This is a todo application created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -21,7 +21,19 @@ In the output, you'll find options to open the app in a
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-## Learn more
+## Features
 
+1. Add a todo task.
+
+2. Update task status.
+
+3. Update task title.
+
+4. Filter task.
+
+5. Delete task.
+
+6. Theam for light and dark mode
+
+7. Simple and clean UI (easy to understand).
