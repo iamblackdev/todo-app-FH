@@ -7,6 +7,7 @@ import {
   Platform,
   StyleSheet,
   TextInput,
+  TouchableOpacity,
   TouchableWithoutFeedback,
   useWindowDimensions
 } from "react-native";
@@ -132,12 +133,12 @@ const AddTodo: React.FC = () => {
       </Animated.View>
 
       {/* add button */}
-      <HapticTab onPress={() => toogleAddModal(true).start()}>
+      <TouchableOpacity onPress={() => toogleAddModal(true).start()}>
         <Animated.View
           style={[styles.floatingBtn, { backgroundColor: Colors.active, bottom: buttonAnimationRef }]}>
           <Ionicons name="add" size={24} color="white" />
         </Animated.View>
-      </HapticTab>
+      </TouchableOpacity>
 
       {/* backdrop */}
       {backdropPointer && <TouchableWithoutFeedback onPress={() => handleCloseAddModal()}>
